@@ -1,14 +1,6 @@
 let turn = true; // TRUE = player, FALSE = enemy
 
-let player = {
-	hp: 10,
-  maxHp: 10
-}
-
-let enemy = {
-	hp: 10,
-  maxHp: 10
-}
+let enemy = new Enemy('forest');
 
 function battle() {
 	if(turn) {
@@ -23,8 +15,5 @@ function battle() {
 }
 
 function setup() {
-	document.querySelector("#enemyhp").textContent = enemy.maxHp;
-  document.querySelector("#playerhp").textContent = player.maxHP;
   
-  //setInterval(battle, 1000);
 }
